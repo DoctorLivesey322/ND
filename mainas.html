@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang = "lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autorius" content="Eduard Petkevič, Ef-22/2">
+    <meta name="Description" content="Tai yra mano HTML dokumento praktika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+
+<body>
+    <div class="container">
+      <div class="screen-1">
+        <div class="ui--statusbar">
+          <span>16.44</span>
+          <span>100%</span>
+        </div>
+        <div class="ui--screen-header">
+          <span class="ui--screen-title">Namas</span>
+          <div class="ui--dropdown-menu">
+            <button class="dropdown-toggle arrow">Namie</button>
+            <ul class="dropdown-item">
+              <li>Kavinės</li>
+              <li>Išėjas</li>
+              <li>Rytas</li>
+              <li>Naktis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--section-title">
+            <span>Rodykliai</span>
+            <div class="ui--dropdown-menu">
+              <button class="dropdown-toggle">&hellip;</button>
+              <ul class="dropdown-item right">
+                <li>Atnaujinti</li>
+                <li>Redaguoti sensorius</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui--horizontal-scroll">
+            <div class="ui--card ui--card-square">
+              <span class="ui-card--title">Temperatūra</span>
+              <span class="ui-card--value">47<span class="suffix">°C</span></span>
+            </div>
+            <div class="ui--card ui--card-square">
+              <span class="ui-card--title">Drėgnumas</span>
+              <span class="ui-card--value">100<span class="suffix">%</span></span>
+            </div>
+            <div class="ui--card ui--card-square">
+              <span class="ui-card--title">Energijos suvartojimas</span>
+              <span class="ui-card--value">117<span class="suffix">kWh</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--section-title">
+            <span>Įrenginiai</span>
+            <div class="ui--dropdown-menu">
+              <button class="dropdown-toggle">&hellip;</button>
+              <ul class="dropdown-item right">
+                <li>Atnaujinti</li>
+                <li>Valdyti įrenginius</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui--stack">
+            <div class="ui--card">
+              <div class="ui-card--icon icon-lightbulb"></div>
+              <div>
+                <span class="ui-card--title">Kambario šviesa</span>
+                <span class="ui-card--subtitle">2 įjungti, 10 išjungtį</span>
+              </div>
+              <div class="ui--toggle">
+                <input type="checkbox" id="living-room-lights" />
+                <label for="living-room-lights">Perjungti</label>
+              </div>
+            </div>
+            <div class="ui--card">
+              <div class="ui-card--icon icon-speaker"></div>
+              <div>
+                <span class="ui-card--title">Muzika</span>
+                <span class="ui-card--subtitle">Dabar: Rammstein</span>
+              </div>
+              <div class="ui--toggle">
+                <input type="checkbox" id="kitchen-speaker" />
+                <label for="kitchen-speaker">Perjungti</label>
+              </div>
+            </div>
+            <div class="ui--card">
+              <div class="ui-card--icon icon-lock"></div>
+              <div>
+                <span class="ui-card--title">Duris</span>
+                <span class="ui-card--subtitle">Yra 21%</span>
+              </div>
+              <div class="ui--toggle">
+                <input type="checkbox" id="front-door" />
+                <label for="front-door">Perjungti</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-2">
+        <div class="ui--statusbar">
+          <span>16.44</span>
+          <span>100%</span>
+        </div>
+        <div class="ui--screen-header">
+          <span class="ui--screen-title">Temperatūra</span>
+          <div class="ui--dropdown-menu">
+            <button class="dropdown-toggle arrow">Kambarys</button>
+            <ul class="dropdown-item">
+              <li>Vyrtuvė</li>
+              <li>Vonia</li>
+              <li>Miegamasis</li>
+              <li>Darbo kambarys</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--dial-wrapper">
+            <div class="ui-dial--outer">
+              <div id="range--selector"></div>
+              <div id="range"></div>
+            </div>
+            <div class="ui--dial-inner">
+              <span class="ui--dial-status">&nbsp;&nbsp;&nbsp;Nustatyti Temperatūra:</span>
+              <span class="ui--dial-value">56<span class="suffix">°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--stack-horizontal" style="margin-top: 36px">
+            <div class="ui--detail">
+              <span class="ui--detail-title">Vyduje</span>
+              <span class="ui--detail-value">21<span class="suffix">°C</span></span>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="ui--detail">
+              <span class="ui--detail-title">Lauke</span>
+              <span class="ui--detail-value">-98<span class="suffix">°C</span></spa>
+            </div>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--stack-horizontal" style="margin-top: 36px">
+            <div class="ui--card ui--card-square-sm">
+              <div class="ui--button">
+                <input type="checkbox" id="eco-mode" checked>
+                <label for="eco-mode" class="icon-eco">Ekonomiškas režymas</label>
+              </div>
+            </div>
+            <div class="ui--card ui--card-square-sm">
+              <div class="ui--button">
+                <input type="checkbox" id="air-flow">
+                <label for="air-flow" class="icon-air">Vejas</label>
+              </div>
+            </div>
+            <div class="ui--card ui--card-square-sm">
+              <div class="ui--button">
+                <input type="checkbox" id="fan-speed">
+                <label for="fan-speed" class="icon-fan">Kitas vejas</label>
+              </div>
+            </div>
+            <div class="ui--card ui--card-square-sm">
+              <div class="ui--button">
+                <input type="checkbox" id="humidity">
+                <label for="humidity" class="icon-water">Drėgnumas</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-3">
+        <div class="ui--statusbar">
+          <span>16:44</span>
+          <span>100%</span>
+        </div>
+        <div class="ui--screen-header">
+          <span class="ui--screen-title">Saulės energija</span>
+          <div class="ui--dropdown-menu">
+            <button class="dropdown-toggle arrow">Šiandien</button>
+            <ul class="dropdown-item">
+              <li>Vakar</li>
+              <li>Šia savaite</li>
+              <li>Praeita savaite</li>
+              <li>Ši mėnesi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui--screen-section">
+          <div class="ui--screen-section">
+            <div class="ui--stack-horizontal">
+              <div class="ui--detail">
+                <span class="ui--detail-title">DAbartinis įkrovimas</span>
+                <span class="ui--detail-value">2000<span class="suffix">kW</span></span>
+              </div>
+              <div class="vertical-separator"></div>
+              <div class="ui--detail">
+                <span class="ui--detail-title">Vartojimas</span>
+                <span class="ui--detail-value">278.9<span class="suffix">kWh</span></spa>
+              </div>
+            </div>
+          </div>
+          <div class="ui--screen-section">
+            <div class="ui--graph"></div>
+            <div class="ui-graph--marker"></div>
+          </div>
+          <div class="ui--screen-section">
+            <div class="ui--horizontal-scroll">
+              <div class="ui--card ui--card-square">
+                <div class="ui--detail">
+                  <span class="ui--detail-title">Talpa</span>
+                  <span class="ui--detail-value">1200000<span class="suffix">kW</span></spa>
+                </div>
+                <div class="ui--chart-pie" style="--p:85">
+                  <span>15%</span>
+                </div>
+              </div>
+              <div class="ui--card ui--card-square">
+                <div class="ui--detail">
+                  <span class="ui--detail-title">Įkrovimo lygis</span>
+                  <span class="ui--detail-value">200<span class="suffix">kW/h</span></spa>
+                </div>
+                <div class="ui--chart-pie" style="--p:65">
+                  <span>400h<br />iki Įkrovimo</span>
+                </div>
+              </div>
+              <div class="ui--card ui--card-square">
+                <div class="ui--detail">
+                  <span class="ui--detail-title">Efektyvumas</span>
+                  <span class="ui--detail-value">100<span class="suffix">%</span></spa>
+                </div>
+                <div class="ui--chart-pie" style="--p:95">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  
+  
+
+  </html>
